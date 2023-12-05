@@ -1,0 +1,204 @@
+<!-- # *********************************************************** # -->
+<!-- # This templates was made by Nassim MZILI (https://mzili.com) # -->
+<!-- # *********************************************************** # -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>School Form Registration</title>
+	
+	<!-- Specific Metas -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="./assets/css/opensans-font.css">
+
+	<!-- Icon 'font Awesome' -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<!-- Main Style -->
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+</head>
+
+<body>
+	<div class="container">
+		<div class="box">
+			<div class="formBox">
+				<!-- !form header -->
+				<div class="formHead">
+					<div class="header-content">
+						<h1 class="heading">School Form Registration</h1>
+						<p>
+							Welcome to Our School! Please complete the form with accurate information for a smooth 
+							registration process!
+						</p>
+					</div>
+					<img src="./assets/images/school logoo.jpg" alt="" srcset="">
+				</div> 
+
+
+				<!-- !form body -->
+		        <form class="form-register" method="post" action="./index.html">
+					<!-- #infos eara -->
+					<div class="form-content">
+						<!-- ?Peronal Info -->
+						<div>
+							<label class="special-label">Peronal Infomation:</label>
+							<!-- *NAME -->
+							<div class="form-row">	
+								<div class="form-row-box">
+									<fieldset>
+										<legend>First Name*</legend>
+										<input type="text" class="form-control" id="first-name" name="first-name" placeholder="First Name" required>
+									</fieldset>
+								</div>
+								<div class="form-row-box">
+									<fieldset>
+										<legend>Midle Name</legend>
+										<input type="text" class="form-control" id="Midle-name" name="Midle-name" placeholder="- - - - - -">
+									</fieldset>
+								</div>
+								<div class="form-row-box">
+									<fieldset>
+										<legend>Last Name*</legend>
+										<input type="text" class="form-control" id="last-name" name="last-name" placeholder="Last Name" required>
+									</fieldset>
+								</div>
+							</div>
+
+							<!-- *Student -->
+							<div class="form-row">
+								<!-- Student Number -->
+								<div class="form-row-box">
+									<fieldset>
+										<legend>Student Number*</legend>
+										<input type="number" class="form-control" id="stdnb" name="stdnb" placeholder="Exp: 19468308864" pattern="[1-9]" required>
+									</fieldset>
+								</div>
+								<!-- Birth Date -->
+								<div class="form-row-box">
+									<fieldset>
+										<legend>Birth Date *</legend>
+										<input type="date" name="Birth" id="Birth" class="form-control" required>
+									</fieldset>
+								</div>
+							</div>
+
+							<!-- *Contact -->
+							<div class="form-row">
+								<!-- Student Email -->
+								<div class="form-row-box">
+									<fieldset>
+										<legend>Your Email*</legend>
+										<input type="text" name="your_email" id="stmail" class="form-control" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="example@academie.com" required>
+									</fieldset>
+								</div>
+								<!-- Student Tel -->
+								<div class="form-row-box">
+									<fieldset>
+										<legend>Phone Number*</legend>
+										<input type="number" class="form-control" id="stphone" name="phone" placeholder="+212 666-666-666" required>
+									</fieldset>
+								</div>
+							</div>
+						</div>
+						
+						<!-- ?Academie Info -->
+						<div class="form-row form-row-date">
+							<div class="form-row-box form-row-box-2">
+								<label class="special-label">Academie Infomation:</label>
+								<div class="form-row-st">
+									<select name="Degree" id="Degree">
+										<option value="" disabled selected>Degree Program*</option>
+										<option value="0">No degree</option>
+										<option value="1">High School Degree</option>
+										<option value="2">University Degree</option>
+										<option value="3">Master's Degree</option>
+										<option value="4">Doctorate Degree</option>
+									</select>
+									
+									<select name="Level" id="Level">
+										<option value="" disabled selected>Year Level*</option>
+										<option value="1">1st Year</option>
+										<option value="2">2nd Year</option>
+										<option value="3">3rd Year</option>
+										<option value="4">4th Year</option>
+										<option value="5">5th Year</option>
+										<option value="6">6th Year</option>
+										<option value="7">7th Year</option>
+										<option value="8">8th Year</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<!-- ?Address Info -->
+						<div class="form-row form-row-date">
+							<div class="form-row-box form-row-box-2">
+								<label class="special-label">Address Infomation:</label>
+								<div class="form-row">
+									<!--  Present Address -->
+									<div class="form-row-box form-row-box-2">
+										<fieldset>
+											<legend>Present Address*</legend>
+											<input type="text" class="form-control" id="staddress" name="staddress"placeholder="Street, City, County...." required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<!-- City -->
+									<div class="form-row-box">
+										<fieldset>
+											<legend>City*</legend>
+											<input type="text" class="form-control" id="stcity" name="stcity"placeholder="Present City" required>
+										</fieldset>
+									</div>
+									<!--  zip/code  -->
+									<div class="form-row-box">
+										<fieldset>
+											<legend>Zip/Postal*</legend>
+											<input type="number" class="form-control" id="stzip" name="stzip" placeholder="### ###" required>
+										</fieldset>
+									</div>
+									<!-- Country -->
+									<div class="form-row-box">
+										<fieldset>
+											<legend>Country*</legend>
+											<input type="text" class="form-control" id="stcountry" name="saddress1"placeholder="Select your country" required >
+										</fieldset>
+										<!-- <div>
+											<option value="" disabled selected>Country*</option>
+											<option value="usa">USA</option>
+											<option value="usa">USA</option>
+											<option value="usa">USA</option>
+										</div> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+		        </form>
+
+
+				<!-- !submit eara -->
+				<div class="btnarea">
+					<button class="bttn">
+						<span>Submit</span>
+						<div class="success">
+						<svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 29.756 29.756" style="enable-background:new 0 0 29.756 29.756;" xml:space="preserve">	
+							<path d="M29.049,5.009L28.19,4.151c-0.943-0.945-2.488-0.945-3.434,0L10.172,18.737l-5.175-5.173   c-0.943-0.944-2.489-0.944-3.432,0.001l-0.858,0.857c-0.943,0.944-0.943,2.489,0,3.433l7.744,7.752   c0.944,0.943,2.489,0.943,3.433,0L29.049,8.442C29.991,7.498,29.991,5.953,29.049,5.009z"/>
+						</svg>
+						</div>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- js -->
+	<script src="./assets/js/main.js"></script>
+</body>
+</html>
+<!-- This templates was made by Nassim MZILI (https://mzili.com) -->
+
