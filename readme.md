@@ -2,7 +2,7 @@
 
 Welcome to the School Form Register project! This web application allows users to register for school by filling out a form. The project is built using HTML, CSS, and JavaScript to ensure a seamless and responsive experience across all devices.
 
-![[mzili.com/projects/register/register.html](https://mzili.com/projects/register/register.html)]
+![[https://mzili.com/projects/register/register.html](https://mzili.com/projects/register/register.html)]
 
 ## Features
 
